@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan-bg: #218380;
+    --FF: Verdana;
+    --FS-big: 24px;
+    --FS-small: 16px; 
+}
+
+body {
+    font-family: var(--FF);
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: var(--cyan-bg);
+    color: white;
+    font-size: var(--FS-big);
+    padding: 1.3rem;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app {
+    border: 1px solid rgba(153, 153, 153, 0.6);
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    box-shadow: 10px 5px 7px rgb(153, 153, 153, 0.6);
+    max-width: 80%;
+}
+
+#app > * {
+    margin: 1rem 0;
+}
+
+#app ul {
+    list-style-position: inside;
+}
+
+#app button {
+    background: var(--cyan-bg);
+    color: white;
+    padding: 1em;
+    border: 0;
+    border-radius: 0.5em;
+}
+
+#app button:not(:first-child) {
+    margin-right: 1rem;
+}
+
+#app .answer {
+    width: 100%;
+    border-radius: 0.7em;
+    padding: 1em;
+    background: var(--cyan-bg);
+    color: white;
+}
+
+#app input {
+    font: inherit;
+}
